@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * cap_string - capitalize first letter from all sentences
- * @s: pointer to the char in string
- * Return: array of string
+ * cap_string - capitalize first letter from all sentences.
+ * @s: pointer to the char in string to be capitalized.
+ * Return: pointer to the changed string.
  */
 char *cap_string(char *s)
 {

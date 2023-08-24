@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * leet - encode into 1337 speak
- * @s: pointer to char
+ * @str: pointer to char
  * Return: pointer to encoded string
  */
 char *leet(char *str)

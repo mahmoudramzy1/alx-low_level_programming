@@ -20,9 +20,13 @@ char *cap_string(char *s)
 				{
 					s[i] -= 32;
 				}
+				else
+					continue;
 			}
-
 		}
+		else
+			continue;
 	}
+
 	return (s);
 }

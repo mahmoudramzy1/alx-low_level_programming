@@ -1,5 +1,6 @@
 #ifndef main_h
 #define main_h
+void print_number(int n);
 char *rot13(char *);
 int _putchar(char);
 char *_strcat(char *dest, char *src);

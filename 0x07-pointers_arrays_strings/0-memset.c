@@ -2,6 +2,7 @@
 /**
  * _memset - fills memory with b for first n bytes
  * @s: pointer to string
+ * @b: char will be fill the memory
  * @n: number of bytes
  * Return: pointer to bytes
  */

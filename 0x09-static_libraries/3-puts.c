@@ -1,18 +1,15 @@
 #include "main.h"
-
 /**
- * _puts - prints a string, followed by a new line,
- * @str: pointer to the string to print
- * Return: void
+ * _puts - prints sring
+ * @str: string parameter to print
+ * Return: 0
  */
-
 void _puts(char *str)
 {
-	int i = 0;
-
-	while (*str++)
+	while (*str != '\0')
 	{
-		_putchar(*str++);
+		_putchar(*str + 0);
+		str++;
 	}
 	_putchar('\n');
 }

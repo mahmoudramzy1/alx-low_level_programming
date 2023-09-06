@@ -5,12 +5,12 @@
  * main - multiply two arguements
  * @argc: number of arguements
  * @argv: pointer to arguements
- * Retrun: 0
+ * Return: always 0
  */
 int main(int argc, char *argv[])
 {
 	int sum;
-	/*char *p = &argv*/
+
 	if (argc == 3)
 	{
 

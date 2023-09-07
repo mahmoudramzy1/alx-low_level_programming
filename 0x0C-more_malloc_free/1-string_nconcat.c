@@ -1,6 +1,6 @@
+#include <stdlib.h>
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * string_nconcat - concentrate two strings
  * @s1: parameter takes first string
@@ -35,6 +35,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 
-	str[i + j + 1] = '\0';
+	str[i] = '\0';
 	return (str);
 }

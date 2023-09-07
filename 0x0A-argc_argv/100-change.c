@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	if (mod < 0)
 		printf("%d\n", sum);
 	if (mod > 0)
-	{	
+	{
 	if (mod / 25 != 0)
 	{
 		sum += mod / 25;

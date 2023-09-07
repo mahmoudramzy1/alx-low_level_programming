@@ -6,6 +6,7 @@
  * string_nconcat - concentrate two strings
  * @s1: parameter takes first string
  * @s2: parameter takes second string
+ * @n: paramter takes number
  * Return: pointer to new string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -30,11 +31,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; s1[i] != '\0'; i++)
 		str[i] = s1[i];
 	for (j = 0; j < n; j++)
-	{	
+	{
 		str[i] = s2[j];
 		i++;
 	}
-	
+
 	str[i + j + 1] = '\0';
 	return (str);
 }

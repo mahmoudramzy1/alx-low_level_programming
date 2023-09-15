@@ -3,6 +3,9 @@
  * print_strings - prints strings
  * @separator: separator between strings
  * @n: count of sttrings
+ * @...: the string
+ *
+ * Return: void
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {

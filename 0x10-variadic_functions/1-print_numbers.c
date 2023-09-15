@@ -3,6 +3,7 @@
  * print_numbers - printes num follow by new line
  * @separator: separator between numbers
  * @n: count of pnumbers
+ * @...: the integers
  * Return: 0
  */
 void print_numbers(const char *separator, const unsigned int n, ...)

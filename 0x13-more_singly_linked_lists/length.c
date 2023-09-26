@@ -4,16 +4,16 @@
  * @head: pointer to header
  * Return: number of nodes
  */
-int length(listint_t *head)
+unsigned int length(listint_t *head)
 {
-	listint_t *temp;
-	int i = 1;
+	listint_t *temp = head;
+	unsigned int i = 1;
 
-	temp = head;
+
 	if (head == NULL)
 		return (0);
 	while (temp->next != NULL)
-	{	
+	{
 		temp = temp->next;
 		i++;
 	}

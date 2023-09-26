@@ -7,7 +7,7 @@
 unsigned int length(listint_t *head)
 {
 	listint_t *temp = head;
-	unsigned int i = 1;
+	unsigned int i = 0;
 
 
 	if (head == NULL)

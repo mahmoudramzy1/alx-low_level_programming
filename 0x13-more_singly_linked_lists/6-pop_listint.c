@@ -13,7 +13,7 @@ int pop_listint(listint_t **head)
 		return (0);
 
 	spare_head = (*head)->next;
-	n = spare_head->n;
+	n = (*head)->n;
 	free(*head);
 	*head = spare_head;
 	return (n);

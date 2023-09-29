@@ -6,19 +6,19 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int mask;
-	int i;
-	 int msb_position = sizeof(n) * 8 - 1;
-    while (((n >> msb_position) & 1) == 0)
-        msb_position--;
+	int bit = sizeof(n) * 8, printed = 0;
 
-    for (i = msb_position; i >= 0; i--)
-    {
-        mask = 1u << i;
+	while (bit)
+	{
+		if (n & 1L << --bit)
+		{
+			_putchar('1');
+			printed++;
+		}
+		else if (printed)
+			_putchar('0');
 
-        if ((n & mask) != 0)
-            printf("1");
-        else
-            printf("0");
-    }
+	}
+	if (!printed)
+		_putchar('0');
 }

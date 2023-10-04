@@ -10,8 +10,9 @@ int _strlen(char *s)
 
 	if (!s)
 		return (0);
-	while (*s++)
+	while (*s != '\0')
 	{
+		s++;
 		i++;
 	}
 	return (i);
@@ -37,7 +38,7 @@ int create_file(const char *filename, char *text_content)
 	}
 	if (len)
 	{
-		bytes = write(fd, text_content, _strlen(text_content));
+		bytes = write(fd, text_content, len);
 	}
 	close(fd);
 	if (bytes == len)

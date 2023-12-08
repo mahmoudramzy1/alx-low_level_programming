@@ -3,6 +3,7 @@
  * insert_dnodeint_at_index - inserts node at the given index
  * @h: pointe to pointer to the header of the list
  * @idx: the index that the node will add in
+ * @n: node data
  * Return: new node or NULL if failed
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
